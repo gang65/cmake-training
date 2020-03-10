@@ -9,7 +9,7 @@ add_library(${PROJECT_NAME} SHARED multiple.cpp)
 #install(TARGETS ${PROJECT_NAME} DESTINATION /usr/local/bin)
 
 
-add_library(interfacelib SHARED multiple.cpp)
+add_library(interfacelib INTERFACE)
 
 set_target_properties(interfacelib PROPERTIES
   PUBLIC_HEADER multiple.hpp
